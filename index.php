@@ -1,16 +1,17 @@
-<!-- PHP mode start PHP engine ko signal. PHP code yahan start it's called Opening Tag-->
+<!-- Opening PHP tag: signals the start of PHP code to the interpreter -->
 <?php
-// echo ka matbal Output bhejo
+// `echo` outputs the given string to the response
 echo "hello world\n";
 echo "hello world";
-// PHP mode end PHP code yahan end it's called Closing Tag
+// Closing PHP tag: ends the PHP code block
 ?>
 
-<!-- echo "your output " <--echo is like a console.log() jo printe kar na ka kam ata hai   -->
+<!-- `echo` is analogous to JavaScript's console.log(): it prints text to the response -->
 
 
 
-<!-- Resource -->
+<!-- Resource example -->
  <?php
-//  $file = fopen('test.txt',"r");
+// Example: open a file resource for reading (uncomment to use)
+// $file = fopen('test.txt', "r");
  ?>

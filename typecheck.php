@@ -1,7 +1,7 @@
- <!-- Type Checking -->
+ <!-- Type checking examples using `var_dump` to inspect variable types and values -->
 
  <?php
- $x= 10;
+ $x = 10;
  $name = "amit";
  $arr = [1,2,3,4,5];
  var_dump($x);
