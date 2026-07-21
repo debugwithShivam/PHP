@@ -1,22 +1,23 @@
 <?php
-// What is constant 
-// Constant = ऐसा named value जिसकी value once set होने के बाद बदली नहीं जा सकती।
+// What is a constant?
+// Constant = a named value whose value cannot be changed once it is set.
 // Variable:
 $x = 10;
 $x = 20;
 // Allowed
 // Constant : define("PI", 3.14);
 define("PI", 3.14);
-// अगर बाद में बदलना चाहो:
+// If you try to change it later:
 // define("PI", 5);
-// Allowed नहीं।
+// Not allowed.
 
-// Constant बनाने के 2 तरीके
+// There are 2 ways to create a constant
 // Method 1 — define()
-// सबसे common।
-// Stntax : define("NAME", value);
+// Most common.
+// Syntax : define("NAME", value);
 
 // Example
 define("SITE_NAME", "My Website");
 echo SITE_NAME;
+echo PI;
 ?>
