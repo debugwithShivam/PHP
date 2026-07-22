@@ -37,6 +37,32 @@ echo "Spaceship Operator Introduced in PHP 7." . PHP_EOL;
 echo 100 <=> 100;
 
 // Logical Operators
+// Logical OR (||)
+$isAdmin = false;
+$isModerator = true;
+
+var_dump($isAdmin || $isModerator);
+// Logical AND (&&)
+$age = 20;
+$hasID = true;
+
+var_dump($age >= 18 && $hasID);
+// Logical NOT (!)
+$isLoggedIn = false;
+
+var_dump(!$isLoggedIn);
+// XOR Sirf ek true hona chahiye.
+var_dump(true xor false); // output true
+// AND
+$result = true and false; // output is true
+// ($result = true) and false;
+// $result = true
+// true and false
+// Expression false hai, lekin $result pehle hi true assign ho chuka hai.
+// final var_dump($result);
+
+// Operator Precedence
+// Operator precedence batati hai ki jab ek expression me multiple operators hon, to PHP kis operator ko pehle evaluate karegi.
 ?>
 
 
@@ -49,3 +75,4 @@ Spaceship Operator (<=>)
 | Equal        | 0      |
 | Left > Right | 1      |
  -->
+
