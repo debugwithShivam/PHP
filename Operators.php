@@ -36,7 +36,7 @@ var_dump(20 >= 10) . PHP_EOL;
 echo "Spaceship Operator Introduced in PHP 7." . PHP_EOL;
 echo 100 <=> 100;
 
-
+// Logical Operators
 ?>
 
 
