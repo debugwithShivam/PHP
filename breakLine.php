@@ -5,7 +5,7 @@ $y = 7;
 // method 1
 echo $x + $y;
 echo "<br>";
-echo $x + $y;
+echo $x + $y . PHP_EOL;
 
 // If you're running PHP in the terminal (CLI)
 // method - 1

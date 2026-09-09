@@ -6,7 +6,7 @@
 
 $x = "5";
 $y = 10;
-echo $x + $y; // 15
+echo $y + $x; // 15
 
 // PHP decides conversion from the operator context:
 // Addition -> numeric conversion
