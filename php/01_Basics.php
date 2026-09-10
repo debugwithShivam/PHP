@@ -10,6 +10,8 @@
         <h1>This is my PHP website</h1>
     </div>
     <?php
+    define('PI', '3.14');
+    
     echo "hello world and this is printed from php";
     $variable1 = 34;
     $variable2 = 45;
@@ -88,6 +90,39 @@
     echo "XOR (/\) :";
     $myvar4 = (false xor true);
     echo var_dump($myvar4);
+    ?>
+    <h1>Data Type</h1>
+    <?php
+    // Data types in php
+    // 1. String
+    echo "this is a String : ";
+    $string = "String Value";
+    echo var_dump($string);
+    echo "<br/>";
+    // 2. Integer
+    echo "this is a Integer : ";
+    $integer = 67;
+    echo var_dump($integer);
+    echo "<br/>";
+    // 3. Float
+    echo "this is a Float : ";
+    $Float = 67.67;
+    echo var_dump($Float);
+    echo "<br/>";
+    // 4. Boolean
+    echo "this is a Boolean : ";
+    $Boolean = true;
+    echo var_dump($Boolean);
+    echo "<br/>";
+    // 5. Array
+    echo "this is a Array : ";
+    $Array = [1,2,3,4];
+    echo var_dump($Array);
+    echo "<br/>";
+    // 6. Object
+
+    // Constent
+    echo PI + "34";
     ?>
 </body>
 </html>
