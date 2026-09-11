@@ -1,3 +1,41 @@
+<?php
+$server = "localhost";
+$username = "root";
+$password = "";
+$database = "trip";
+
+$con = mysqli_connect($server,$username,$password,$database);
+
+if(!$con){
+    die("Connection to this database failed due to" .mysqli_connect_error());
+}
+// echo "Success Connection to the DB"
+
+$submit = false;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$name = $_POST['name']; 
+$age = $_POST['age'];
+$gender = $_POST['gender'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$other = $_POST['other'];
+
+$sql = "INSERT INTO `trip`.`trip` (`name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$other', current_timestamp());";
+
+
+
+  if (mysqli_query($con, $sql)) { 
+    echo "Successfully inserted into database!";
+$submit = true;
+  } else {
+     echo "Error: " . mysqli_error($con);
+     $submit = false;
+  } 
+}
+mysqli_close($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +59,12 @@
     <div class="container">
         <h3>Welcome To IIT kharagput US Trip from</h3>
         <p>Enter your details and submit this from to comfirm your participation in the trip</p>
-        <p class="submitMsg">Thank for submitting your from. we are happy to see you joing us for the US trip</p>
+        <?php
+        if ($submit == true) {
+            echo '<p class="submitMsg">Thank you for submitting your form. We are happy to see you joining us for the US trip.</p>';
+        }
+        ?>
+        
         <form action="index.php" method="post">
             <input type="text" name="name" id="name" placeholder="Enter your name">
             <input type="text" name="age" id="age" placeholder="Enter your age">
